@@ -159,4 +159,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Contact Form Logic
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            const subject = encodeURIComponent('New Contact Form Submission from ' + name);
+            const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+            
+            window.location.href = `mailto:ccontact.ulockai@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Optional: reset the form after short delay
+            setTimeout(() => {
+                contactForm.reset();
+            }, 500);
+        });
+    }
 });
