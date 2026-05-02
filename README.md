@@ -3,7 +3,7 @@
   <h1>Secure Your AI Before It Speaks</h1>
   <p><strong>AI Security SDK for Developers & AI Startups. Lightweight, sub-millisecond, and developer-first protection.</strong></p>
   
-  [![GitHub stars](https://img.shields.io/github/stars/ulockai/ulockai.svg?style=social&label=Star)](https://github.com/ulockai/ulockai)
+  
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 </div>
 
